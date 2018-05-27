@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    tools:context=".MainEdit">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Form Edit dan Delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judul"
+        android:id="@+id/edit_id"
+        android:hint="ID FORM"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_id"
+        android:id="@+id/edit_nama"
+        android:hint="NAMA MAHASISWA"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_nama"
+        android:id="@+id/edit_kelas"
+        android:hint="KELAS MAHASISWA"
+        android:layout_marginBottom="25dp"/>
+
+    <Button
+        android:id="@+id/hapus"
+        android:layout_below="@id/edit_kelas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ubah"
+        android:text="hapus"/>
+    
+    <Button
+        android:id="@+id/ubah"
+        android:layout_below="@id/edit_kelas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="ubah"/>
+
+    <Button
+        android:id="@+id/batal"
+        android:layout_below="@id/edit_kelas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/ubah"
+        android:text="batal"/>
+
+</RelativeLayout>
